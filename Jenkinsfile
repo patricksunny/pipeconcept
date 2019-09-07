@@ -17,7 +17,7 @@ pipeline
 
             }
 
-         }
+        }
 
         
         stage ('Testing Stage') 
