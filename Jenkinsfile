@@ -15,7 +15,7 @@ pipeline
             {
             bat label: '', script: 'mvn compile'
 
-             }
+            }
 
          }
 
