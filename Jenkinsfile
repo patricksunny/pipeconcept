@@ -1,57 +1,57 @@
-pipeline {
+pipeline 
+{
 
     agent any
 
 
 
-    stages {
+    stages 
+    {
 
-        stage ('Compile Stage') {
+        stage ('Compile Stage') 
+        {
 
 
 
             steps 
 
-              {
+        {
 
                    bat label: '', script: 'mvn compile'
 
-                }
+        }
 
-            }
+        }
 
         
-        stage ('Testing Stage') {
-
-
+        stage ('Testing Stage') 
+        {
 
             steps 
 
-                 {
+        {
 
                     bat label: '', script: 'mvn test'
 
-                }
+        }
 
             
 
         }
 
 
-
-
-
-        stage ('Package Stage') {
+        stage ('Package Stage') 
+        {
 
             steps 
 
-                {
+        {
 
                     bat label: '', script: 'mvn package'
 
-                }
+        }
 
-            }
+        }
 
         
 
