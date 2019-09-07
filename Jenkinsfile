@@ -10,51 +10,34 @@ pipeline
 
         stage ('Compile Stage') 
         {
+          steps 
 
+            {
+            bat label: '', script: 'mvn compile'
 
+             }
 
-            steps 
-
-        {
-
-                   bat label: '', script: 'mvn compile'
-
-        }
-
-        }
+          }
 
         
         stage ('Testing Stage') 
         {
-
-            steps 
-
-        {
+          steps 
+            {
 
                     bat label: '', script: 'mvn test'
+             }
 
-        }
-
-            
-
-        }
+         }
 
 
         stage ('Package Stage') 
         {
-
-            steps 
-
-        {
+           steps 
+             {
 
                     bat label: '', script: 'mvn package'
-
-        }
-
-        }
-
-        
-
+              }
+         }
     }
-
 }
